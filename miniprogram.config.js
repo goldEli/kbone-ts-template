@@ -2,7 +2,7 @@
  * @Author: miaoyu
  * @Date: 2020-04-29 16:24:34
  * @LastEditors: miaoyu
- * @LastEditTime: 2020-04-30 14:47:43
+ * @LastEditTime: 2020-04-30 17:58:52
  * @Description:
  */
 module.exports = {
@@ -22,7 +22,7 @@ module.exports = {
     backgroundColor: "#F6F6F6",
     backgroundTextStyle: "light",
     navigationBarBackgroundColor: "#F6F6F6",
-    navigationBarTitleText: "云开发 QuickStart",
+    navigationBarTitleText: "QuickStart",
     navigationBarTextStyle: "black"
   },
   appExtraConfig: {
