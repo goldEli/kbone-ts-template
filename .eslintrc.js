@@ -1,3 +1,10 @@
+/*
+ * @Author: miaoyu
+ * @Date: 2020-04-29 16:24:34
+ * @LastEditors: miaoyu
+ * @LastEditTime: 2020-04-29 17:51:21
+ * @Description:
+ */
 module.exports = {
   root: true,
   env: {
@@ -10,7 +17,10 @@ module.exports = {
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    quotes: 0,
+    semi: 0,
+    "space-before-function-paren": 0
   },
   parserOptions: {
     parser: '@typescript-eslint/parser'
