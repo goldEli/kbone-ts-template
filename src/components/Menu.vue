@@ -2,7 +2,7 @@
  * @Author: miaoyu
  * @Date: 2020-04-30 15:01:57
  * @LastEditors: miaoyu
- * @LastEditTime: 2020-05-04 13:29:27
+ * @LastEditTime: 2020-05-04 13:43:02
  * @Description: 
  -->
 <template>
@@ -13,9 +13,13 @@
           <img v-bind:src="item.url" mode="widthFix" />
         </div>
         <div class="menu-item-toolbar">
-          <i @click="decrement(item._id)" class="iconfont icon-minus"></i>
+          <span @click="decrement(item._id)" class="menu-item-toolbar-btn">
+            <i  class="iconfont icon-minus"></i>
+          </span>
           <span>{{ item.number }}</span>
-          <i @click="increment(item._id)" class="iconfont icon-plus"></i>
+          <span @click="increment(item._id)" class="menu-item-toolbar-btn">
+            <i  class="iconfont icon-plus"></i>
+          </span>
         </div>
         <p>{{ item.name }}</p>
         <p>10元/袋/150g</p>
@@ -105,10 +109,14 @@ export default class HelloWorld extends Vue {
   align-items: center;
 }
 .menu-item-toolbar i {
-  font-size: 14px;
-  // position: relative;
+  font-size: 18px;
 }
-.menu-item-toolbar i:active {
+.menu-item-toolbar-btn {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.menu-item-toolbar-btn:active {
   transform: scale(2);
   transition: all 0.4s linear;
 }
