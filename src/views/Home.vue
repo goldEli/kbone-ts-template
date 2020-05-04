@@ -2,7 +2,7 @@
  * @Author: miaoyu
  * @Date: 2020-04-29 16:24:34
  * @LastEditors: miaoyu
- * @LastEditTime: 2020-05-02 15:18:17
+ * @LastEditTime: 2020-05-04 10:47:40
  * @Description:
  -->
 <template>
@@ -14,6 +14,7 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import Menu, { MenuList } from "@/components/Menu.vue";
+import "../assets/iconfont.css"
 
 @Component({
   components: {
@@ -70,4 +71,5 @@ export default class Home extends Vue {
   // text-align: center;
   // padding-top: 8px;
 }
+
 </style>
