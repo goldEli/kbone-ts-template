@@ -2,7 +2,7 @@
  * @Author: miaoyu
  * @Date: 2020-04-29 16:24:34
  * @LastEditors: miaoyu
- * @LastEditTime: 2020-05-04 10:47:40
+ * @LastEditTime: 2020-05-05 19:21:38
  * @Description:
  -->
 <template>
@@ -13,7 +13,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import Menu, { MenuList } from "@/components/Menu.vue";
+import Menu, { MenuList } from "@/views/Menu.vue";
 import "../assets/iconfont.css"
 
 @Component({
@@ -32,9 +32,6 @@ export default class Home extends Vue {
   // }
 
   created() {
-    // wx.setNavigationBarTitle({
-    //   title: "123"
-    // });
     // if (this.isAdmin === undefined) {
     //   // 调用云函数
     //   wx.cloud.callFunction({
