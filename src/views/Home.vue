@@ -2,7 +2,7 @@
  * @Author: miaoyu
  * @Date: 2020-04-29 16:24:34
  * @LastEditors: miaoyu
- * @LastEditTime: 2020-05-05 19:21:38
+ * @LastEditTime: 2020-05-06 10:33:44
  * @Description:
  -->
 <template>
@@ -14,7 +14,6 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import Menu, { MenuList } from "@/views/Menu.vue";
-import "../assets/iconfont.css"
 
 @Component({
   components: {
@@ -51,6 +50,7 @@ export default class Home extends Vue {
       name: "getMenuList",
       data: {},
       success: (res: any) => {
+        this.$router.push('/admin')
         console.log(res.result.data)
         this.menuList = res.result.data;
       }

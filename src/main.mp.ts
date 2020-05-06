@@ -2,7 +2,7 @@
  * @Author: miaoyu
  * @Date: 2020-04-29 16:24:34
  * @LastEditors: miaoyu
- * @LastEditTime: 2020-04-30 14:47:06
+ * @LastEditTime: 2020-05-06 10:34:18
  * @Description:
  */
 import Vue from 'vue'
@@ -11,6 +11,7 @@ import router from './router'
 import store from './store'
 import KboneUI from 'kbone-ui'
 import 'kbone-ui/lib/weui/weui.css'
+import './assets/iconfont.css'
 
 export default function createApp () {
   const container = document.createElement('div')

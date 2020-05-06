@@ -2,7 +2,7 @@
  * @Author: miaoyu
  * @Date: 2020-04-29 16:24:34
  * @LastEditors: miaoyu
- * @LastEditTime: 2020-04-30 17:58:52
+ * @LastEditTime: 2020-05-06 10:00:30
  * @Description:
  */
 module.exports = {
@@ -31,7 +31,7 @@ module.exports = {
   global: {
     share: true,
     windowScroll: false,
-    backgroundColor: "#F7F7F7",
+    backgroundColor: "#ECEDEE",
     rem: true
   },
   pages: {},

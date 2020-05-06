@@ -2,7 +2,7 @@
  * @Author: miaoyu
  * @Date: 2020-04-30 15:01:57
  * @LastEditors: miaoyu
- * @LastEditTime: 2020-05-05 19:23:09
+ * @LastEditTime: 2020-05-06 10:50:15
  * @Description: 
  -->
 <template>
@@ -16,7 +16,7 @@
           <span @click="decrement(item._id)" class="menu-item-toolbar-btn">
             <i class="iconfont icon-minus"></i>
           </span>
-          <span>{{ item.number }}</span>
+          <span class="menu-item-toolbar-number">{{ item.number }}</span>
           <span @click="increment(item._id)" class="menu-item-toolbar-btn">
             <i class="iconfont icon-plus"></i>
           </span>
@@ -131,6 +131,9 @@ export default class Menu extends Vue {
 .menu-item-toolbar-btn {
   display: flex;
   justify-content: center;
+  flex: 1;
+}
+.menu-item-toolbar-number {
   flex: 1;
 }
 .menu-item-toolbar-btn:active {
